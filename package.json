@@ -1,0 +1,19 @@
+{
+  "name": "gaumitra-website-and-admin",
+  "version": "2.0.0",
+  "description": "GauMitra - Cattle, Feed, Veterinary Medicine & Equipment E-Commerce Platform with Multilingual AI Farm Assistant",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "cattle",
+    "dairy",
+    "livestock",
+    "ai-chatbot",
+    "groq",
+    "ecommerce"
+  ],
+  "author": "GauMitra",
+  "license": "MIT"
+}

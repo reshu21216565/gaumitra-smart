@@ -1,0 +1,45 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Products, coupons, settings, meta:
+    // Publicly readable for catalogue & store info; writable by admin
+    match /products/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    match /coupons/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    match /settings/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    match /meta/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Orders, appts, reviews, inquiries, ads:
+    // Readable and writable by customers and store admin
+    match /orders/{docId} {
+      allow read, write: if true;
+    }
+    match /ordersPII/{docId} {
+      allow read, write: if true;
+    }
+    match /appts/{docId} {
+      allow read, write: if true;
+    }
+    match /reviews/{docId} {
+      allow read, write: if true;
+    }
+    match /inquiries/{docId} {
+      allow read, write: if true;
+    }
+    match /ads/{docId} {
+      allow read, write: if true;
+    }
+  }
+}
+

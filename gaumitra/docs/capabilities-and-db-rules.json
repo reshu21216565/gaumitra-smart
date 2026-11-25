@@ -1,0 +1,60 @@
+{
+  "assets": {},
+  "db": {
+    "rules": [
+      {
+        "path": "products",
+        "read": "view",
+        "write": "admin"
+      },
+      {
+        "path": "coupons",
+        "read": "view",
+        "write": "admin"
+      },
+      {
+        "path": "settings",
+        "read": "view",
+        "write": "admin"
+      },
+      {
+        "path": "meta",
+        "read": "view",
+        "write": "admin"
+      },
+      {
+        "path": "orders",
+        "read": "view",
+        "write": "interact"
+      },
+      {
+        "path": "ordersPII",
+        "read": "interact",
+        "write": "interact"
+      },
+      {
+        "path": "appts",
+        "read": "view",
+        "write": "interact"
+      },
+      {
+        "path": "reviews",
+        "read": "view",
+        "write": "interact"
+      },
+      {
+        "path": "inquiries",
+        "read": "interact",
+        "write": "interact"
+      },
+      {
+        "path": "ads",
+        "read": "view",
+        "write": "interact"
+      }
+    ]
+  },
+  "downloads": true,
+  "sample": {},
+  "user": {}
+}
